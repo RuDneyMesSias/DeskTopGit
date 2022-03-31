@@ -1,0 +1,51 @@
+[33mcommit d5453d4f7169eda75c5f4fd12acc0c5abcce577c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Rudney Vinicius <rudney_vinicius@hotmail.com>
+Date:   Thu Mar 31 13:25:22 2022 -0300
+
+    commit inicial
+
+[33mcommit 123c46e27dc618e2ab3d148b53e415e34fe56da7[m
+Author: Rudney Vinicius <rudney_vinicius@hotmail.com>
+Date:   Tue Mar 29 19:34:41 2022 -0300
+
+    alteração_5
+    
+    painel de escolha de diferentes jogos
+
+[33mcommit 5bf778171f26f621ab5d039afe04da763887afa6[m
+Author: Rudney Vinicius <rudney_vinicius@hotmail.com>
+Date:   Tue Mar 29 17:15:58 2022 -0300
+
+    Alterações_4
+    
+    esquema de pontuação
+
+[33mcommit 15236e4e13489eff46fd5813180086d65a5585dc[m
+Author: Rudney Vinicius <rudney_vinicius@hotmail.com>
+Date:   Tue Mar 22 00:54:30 2022 -0300
+
+    alteração_3
+    
+    Finalizado laço, Definido valor aleatório ao resultado e por fim nível de dificuldade onde determina numero de tentativas para advinhação.
+
+[33mcommit 563c1aff41df5e0d3a4049d9d9ff6637bb21aa88[m
+Author: Rudney Vinicius <rudney_vinicius@hotmail.com>
+Date:   Sun Mar 20 18:34:57 2022 -0300
+
+    alteração_2
+    
+    uso do for e Encerramento do programa
+
+[33mcommit 4e881c2967ac61439bb0bf5bac93a75bb5a41db9[m
+Author: Rudney Vinicius <rudney_vinicius@hotmail.com>
+Date:   Sun Mar 20 16:21:39 2022 -0300
+
+    Evolução_1
+    
+    estrutura de dados _ while
+
+[33mcommit 734b77993a61185055594661af50c28b45babb2f[m
+Author: Rudney Vinicius <rudney_vinicius@hotmail.com>
+Date:   Fri Mar 18 11:31:37 2022 -0300
+
+    Initial commit
