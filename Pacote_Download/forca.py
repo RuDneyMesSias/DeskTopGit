@@ -1,4 +1,3 @@
-
 # Para declarar uma função, devemos usar a palavra chave def do mundo Python, seguida pelo nome da função. Lembrando que é consenso usar a nomenclatura snake_case:#
 #def nome_da_funcao():
     # todo o código identado faz parte da função print("aprendendo funções")#
@@ -18,9 +17,11 @@ def jogar():
 
         chute = input('Qual letra? ')
 
-        for  letra in palavra_secreta:
-            if(chute == letra):
-                print(chute)
+        index = 0
+        for digito in palavra_secreta:
+            if(chute == digito):
+                print('Encontrei a letra {} na posição {}'.format(digito, index))
+            index = index + 1
 
         print('jogando ...')
 
