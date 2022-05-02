@@ -8,12 +8,14 @@ def jogar():
     print('________Bem vindo ao jogo de forca___________')
     print('_____________________________________________')  
     
-    palavra_secreta = 'banana'
+    palavra_secreta = 'batata'
+    print('A palavra secreta tem',len (palavra_secreta), 'letras')
     letra_acertadas = ['_', '_', '_', '_', '_', '_']
 
     enforcou = False
     acertou = False
 
+    
     print(letra_acertadas)
 
     while(not enforcou and not acertou):
