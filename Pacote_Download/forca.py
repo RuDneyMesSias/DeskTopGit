@@ -5,10 +5,10 @@
 def jogar():
 
     print('_____________________________________________')
-    print('________Bem vindo ao jogo de forca___________')
+    print('________Bem Vindo ao jogo de forca___________')
     print('_____________________________________________')  
     
-    palavra_secreta = 'mel'
+    palavra_secreta = 'banana'.upper()
     print('A palavra secreta tem',len (palavra_secreta), 'letras')
     letra_acertadas = ['_', '_', '_', '_', '_', '_']
 
@@ -21,20 +21,25 @@ def jogar():
     while(not enforcou and not acertou):
 
         chute = input('Qual letra? ')
-        chute = chute.strip()
+        chute = chute.strip().upper()
 
         if(chute in palavra_secreta):
             index = 0
             for digito in palavra_secreta:
                 if(chute.upper() == digito.upper()):
                     letra_acertadas[index] = digito
-                index = index + 1
+                index += 1
         else:
-            erros = erros + 1
+            erros += 1
 
         enforcou = erros == len(palavra_secreta)
+        acertou = '_' not in letra_acertadas
         print(letra_acertadas)
 
+    if(acertou):
+        print('Você ganhou!! ')
+    else:
+        print('Você perdeu!! ')
     print('Fim do jogo')
 
 if(__name__ == "__main__"):
