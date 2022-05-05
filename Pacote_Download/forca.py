@@ -10,7 +10,7 @@ def jogar():
     
     palavra_secreta = 'Maça'.upper()
     print('A palavra secreta tem',len (palavra_secreta), 'letras')
-    
+
     letra_acertadas = ["_" for letra in palavra_secreta]
 
     enforcou = False
