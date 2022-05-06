@@ -2,13 +2,26 @@
 #def nome_da_funcao():
     # todo o código identado faz parte da função print("aprendendo funções")#
 
+import random
+
 def jogar():
 
     print('_____________________________________________')
     print('________Bem Vindo ao jogo de forca___________')
     print('_____________________________________________')  
     
-    palavra_secreta = 'Maça'.upper()
+    arquivo = open("palavras.txt", "r")
+    palavras = []
+
+    for linha in arquivo:
+        linha = linha.strip()
+        palavras.append(linha)
+
+    arquivo.close()
+
+    numero = random.randrange(0, len(palavras))
+    palavra_secreta = palavras[numero].upper()
+
     print('A palavra secreta tem',len (palavra_secreta), 'letras')
 
     letra_acertadas = ["_" for letra in palavra_secreta]
@@ -44,5 +57,4 @@ def jogar():
     print('Fim do jogo')
 
 if(__name__ == "__main__"):
-    jogar()
- 
+        jogar() 
