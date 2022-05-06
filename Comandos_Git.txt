@@ -1,0 +1,68 @@
+Configurando git
+
+Verificando a versão:   
+git version             git --version
+Conta:                  git config --global user.name   "Name"
+Email:                  git config --global user.email  "Email"
+Editor Visual Estudio:  git config --global core.editor "Exe.Core"
+
+Localização e movimento no git
+
+Localização:            pwd
+Movimento:              cd Local/
+Lista de diretorio:     ls
+
+Criação do Diretorio git
+
+Criar Diretorio:         mkdir pasta
+Criar Arquivo:           touch arquivo.txt, touch pasta/arquivo2
+
+Comandos Fundamentais git 
+
+Inicializa repository:	              git init
+Confirmação da criação do repository: ls -a
+Status do repository:                 git status
+Adicionar arquivos aos contenner:     git add arquivo.txt, git add *
+Indentificar o contenner e armazenar  git commit -m "Comentário"
+Informação do commit                  git log 
+Visualização da identificação commit: git log --oneline
+
+Comandos de ratriabilidade de commit. HEAD (Identificação de cada commit)	
+
+Verificar os commit:                     git reflog	
+Identificador de commit:		 git log
+Forma simplificada de visualizar commit: git log --oneline
+Visualização do grafo e seus nodos:      git log --graph
+Visualização dos nodos:                  git log --oneline --graph
+Visualização do ramo:                    git branch
+Criando um ramo:                         git branch <new ramo>
+Movendo entre os nodos:                  git checkout (n°nodo)
+Retornar para ultima versão MASTER:      git checkout master
+Revisar as mudanças antes do commit:     git diff
+para remover um commit:                  git reset --hard <cod.commit>
+
+Criando ramos dos nodos
+
+Criando um ramo:                         git checkout -b <nome do ramo>
+Verificar a criação do ramo:             git log --oneline --graph --all
+Grafo de commit:                         git log --graph --all
+Fusão do ramo a master:                  git merge <ramo>
+
+Importando para nuvem GITHUB
+Informação do repositorio remoto:        git remote -v
+enviando para nuvem                      git push
+Verificação da conexão a nuvem:          git remote
+Conexão do repositorio local p/ nuvem    git remote add origin <url>
+ADD Repositorio remoto:                  git remote <(PASTE) url.GITHUB>
+
+
+Variações Git:
+add aquivos que ficaram para trás        git commit --amen --no-edit 
+Confirmação de add arquivo               git show --pretty="" --name-only <id.Commit> 
+remover arquivo staged                   git restore --staged <arquivo.txt>
+
+
+
+
+
+
