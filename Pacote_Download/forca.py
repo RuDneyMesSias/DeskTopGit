@@ -51,9 +51,9 @@ def jogar():
         print(letra_acertadas)
 
     if(acertou):
-        print('Você ganhou!! ')
+        print('Você ganhou!! a palavra secreta é {}'.format(palavra_secreta))
     else:
-        print('Você perdeu!! ')
+        print('Você perdeu!! a palavra secreta é {}'.format(palavra_secreta))
     print('Fim do jogo')
 
 if(__name__ == "__main__"):
