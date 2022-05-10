@@ -1,4 +1,12 @@
-banana
-melancia
-morango
-maça
+abacaxi
+carambola 
+coco verde 
+figo 
+framboesa 
+fruta do conde 
+laranja 
+mamão 
+maracujá 
+melancia 
+nectarina
+uva
