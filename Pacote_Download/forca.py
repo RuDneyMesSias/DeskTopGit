@@ -5,29 +5,26 @@
 
 import random
 
+
+
 def jogar():
     
     imprimir_mensagem_abertura()
     palavra_secreta = carrega_palavra_secreta()
+
     letra_acertadas = inicializa_letras_acertadas(palavra_secreta)
+    print(letra_acertadas)
 
     enforcou = False
     acertou = False
     erros = 0
-    
-    print(letra_acertadas)
 
     while(not enforcou and not acertou):
 
-        chute = input('Qual letra? ')
-        chute = chute.strip().upper()
+        chute = pede_chute()
 
         if(chute in palavra_secreta):
-            index = 0
-            for digito in palavra_secreta:
-                if(chute.upper() == digito.upper()):
-                    letra_acertadas[index] = digito
-                index += 1
+            marca_chute_correto (chute, letra_acertadas, palavra_secreta)
         else:
             erros += 1
 
@@ -36,15 +33,34 @@ def jogar():
         print(letra_acertadas)
 
     if(acertou):
-        print('Você ganhou!! a palavra secreta é {}'.format(palavra_secreta))
+        imprime_mensagem_vencedor()
     else:
-        print('Você perdeu!! a palavra secreta é {}'.format(palavra_secreta))
-    print('Fim do jogo')
+       imprime_mensagem_perdedor()
 
-def imprimir_mensagem_abertura():
-        print('_____________________________________________')
-        print('________Bem Vindo ao jogo de forca___________')
-        print('_____________________________________________') 
+
+       
+
+def imprime_mensagem_vencedor():
+    print("Você ganhou")
+
+
+def imprime_mensagem_perdedor():
+    print("Voc~e perdeu")
+
+def marca_chute_correto(chute, letra_acertadas, palavra_secreta):
+    index = 0
+    for letra in palavra_secreta:
+        if(chute == letra):
+            letra_acertadas [index] = letra
+        index += 1
+
+def pede_chute():
+    chute = input('Qual letra? ')
+    chute = chute.strip().upper()
+    return chute
+
+def inicializa_letras_acertadas(palavra):
+    return ["_" for letra in palavra]
 
 def carrega_palavra_secreta():
     arquivo = open("palavras.txt", "r")
@@ -61,8 +77,10 @@ def carrega_palavra_secreta():
     print('A palavra secreta tem',len (palavra_secreta), 'letras')
     return palavra_secreta
 
-def inicializa_letras_acertadas(palavra):
-    return ["_" for letra in palavra]
+def imprimir_mensagem_abertura():
+        print('_____________________________________________')
+        print('________Bem Vindo ao jogo de forca___________')
+        print('_____________________________________________') 
 
 if(__name__ == "__main__"):
         jogar() 
