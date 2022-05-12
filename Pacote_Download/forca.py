@@ -42,7 +42,7 @@ def imprime_mensagem_vencedor():
 
 
 def imprime_mensagem_perdedor():
-    print("Voc~e perdeu")
+    print("Você perdeu")
 
 def marca_chute_correto(chute, letra_acertadas, palavra_secreta):
     index = 0
